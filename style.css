@@ -535,8 +535,21 @@ section{
     text-align: center;
     margin: 100px 0;
     font-weight: 500;
-    
+    background-size: 200%;
+    background-image: linear-gradient(to left,#ae8625,#f7ef8a,#d2ac47,#edc967,#ae8625);
+    animation: animated 2s linear infinite;  
 }
+
+@keyframes animated{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+    }
+}
+
+
 
 @media (max-width: 1200px){
     .container{
@@ -635,7 +648,7 @@ section{
     }
 
     .frame{
-        width:100;
+        width:100%;
         
     }
 
